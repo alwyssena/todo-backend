@@ -1,0 +1,53 @@
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "email":"ssdsfdsfdsf",
+    "username":"indra",
+    "password":"inrasen@g"
+}
+
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email":"ssdsfdsfdsf",
+    "password":"inrasen@g"
+}
+
+
+
+###
+POST http://localhost:3000/todos
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzY3ZmY0MjY0MjNhOGQwNzkzZjI2MWMiLCJlbWFpbCI6InNzZHNmZHNmZHNmIiwiaWF0IjoxNzM0ODgxOTkwLCJleHAiOjE3MzQ5NjgzOTB9._Py5CdxxnBTia2RmtSXEgwPSs-8xb0AMaygiKEk6LSU
+
+{
+  "title": "Complete Todo App"
+}
+
+###
+PUT http://localhost:3000/update/676832e2066f290144b83507
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzY3ZmY0MjY0MjNhOGQwNzkzZjI2MWMiLCJlbWFpbCI6InNzZHNmZHNmZHNmIiwiaWF0IjoxNzM0ODgxOTkwLCJleHAiOjE3MzQ5NjgzOTB9._Py5CdxxnBTia2RmtSXEgwPSs-8xb0AMaygiKEk6LSU
+
+{
+"title": "Updated Todo", 
+"status": "completed"
+}
+
+###
+GET http://localhost:3000/todos
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzY3ZmY0MjY0MjNhOGQwNzkzZjI2MWMiLCJlbWFpbCI6InNzZHNmZHNmZHNmIiwiaWF0IjoxNzM0ODgxOTkwLCJleHAiOjE3MzQ5NjgzOTB9._Py5CdxxnBTia2RmtSXEgwPSs-8xb0AMaygiKEk6LSU
+
+
+
+
+
+###
+DELETE http://localhost:3000/todos
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzY3ZmY0MjY0MjNhOGQwNzkzZjI2MWMiLCJlbWFpbCI6InNzZHNmZHNmZHNmIiwiaWF0IjoxNzM0ODgxOTkwLCJleHAiOjE3MzQ5NjgzOTB9._Py5CdxxnBTia2RmtSXEgwPSs-8xb0AMaygiKEk6LSU
